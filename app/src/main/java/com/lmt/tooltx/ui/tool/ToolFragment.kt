@@ -1,5 +1,6 @@
 package com.lmt.tooltx.ui.tool
 
+import android.graphics.Bitmap
 import android.content.pm.ActivityInfo
 import android.content.res.ColorStateList
 import android.os.Bundle
@@ -174,8 +175,8 @@ binding.predCard.setOnTouchListener(::onDragTouch)
                 return false
             }
 
-            override fun onPageStarted(view: WebView?, url: String?) {
-                super.onPageStarted(view, url)
+            override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
+                super.onPageStarted(view, url, favicon)
                 WebViewBridge.installWsShim()
                 setStatus("Game đang tải…")
             }
