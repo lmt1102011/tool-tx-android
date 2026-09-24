@@ -17,7 +17,7 @@
     <string name="server_on">Máy chủ đang hoạt động</string>
     <string name="server_off">Máy chủ đang tắt</string>
     <string name="server_waiting_data">Đã kết nối — chờ dữ liệu phiên (bấm MỞ GAME để chơi)</string>
-    <string name="mute_sound">Bật / tắt âm thanh</string>
+    <string name="sound_toggle_hint">Bật / tắt âm thanh</string>
     <string name="muted_on">Máy chủ đang chạy — âm thanh đã tắt</string>
     <string name="muted_off">Máy chủ đang chạy — âm thanh bật</string>
     <string name="server_agent">Máy chủ — agent đang chạy</string>
