@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <!-- Trang Tool bình thường (không chứa WebView) -->
+    <LinearLayout
+        android:id="@+id/tool_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/surfaceContainer"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_md"
+            android:paddingVertical="@dimen/spacing_sm">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/nav_home"
+                android:padding="@dimen/spacing_xs"
+                android:src="@drawable/ic_arrow_left"
+                android:tint="@color/onSurface" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tool"
+                android:textColor="@color/onSurface"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reset_token"
+                style="@style/Widget.Material3.Button.TextButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingHorizontal="@dimen/spacing_lg"
+                android:text="@string/reset_code"
+                android:textColor="@color/primary" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_lg">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/surfaceContainer"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:strokeWidth="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_lg">
+
+                        <TextView
+                            android:id="@+id/tv_tool_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/waiting_data"
+                            android:textColor="@color/onSurface"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_agent_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_sm"
+                            android:text="@string/no_agent"
+                            android:textColor="@color/onSurfaceVariant"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_sm"
+                            android:textColor="@color/primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:text="@string/tool_hint"
+                    android:textColor="@color/onSurfaceVariant"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_open_tool"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginHorizontal="@dimen/spacing_lg"
+            android:layout_marginBottom="@dimen/spacing_md"
+            android:text="@string/open_tool"
+            android:textColor="@color/onPrimary"
+            android:textSize="16sp"
+            app:backgroundTint="@color/primary"
+            app:cornerRadius="@dimen/btn_height" />
+
+        <TextView
+            android:id="@+id/tv_bottom_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/surfaceContainer"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/spacing_md"
+            android:paddingVertical="@dimen/spacing_sm"
+            android:textColor="@color/onSurfaceVariant"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- Lớp game fullscreen (mở khi bấm MỞ GAME) -->
+    <FrameLayout
+        android:id="@+id/game_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:visibility="gone">
+
+        <!-- Sửa lệch màn hình: che cả cụm camera khi fullscreen -->
+        <android.webkit.WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:clipToPadding="false"
+            android:fitsSystemWindows="false" />
+
+        <!-- Nút mũi tên thoát ở góc trái trên cùng -->
+        <ImageButton
+            android:id="@+id/btn_exit_game"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top|start"
+            android:layout_margin="@dimen/spacing_xs"
+            android:background="@drawable/bg_game_exit"
+            android:contentDescription="@string/close_game"
+            android:padding="@dimen/spacing_xs"
+            android:src="@drawable/ic_arrow_left"
+            android:tint="@android:color/white"
+            android:alpha="0.7" />
+
+        <!-- Nút loa mute/unmute góc dưới trái -->
+        <ImageButton
+            android:id="@+id/btn_mute_speaker"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="@dimen/spacing_xs"
+            android:background="@drawable/bg_game_exit"
+            android:contentDescription="@string/mute_sound"
+            android:padding="@dimen/spacing_xs"
+            android:src="@drawable/ic_speaker_on"
+            android:tint="@android:color/white"
+            android:alpha="0.7" />
+
+        <!-- Cửa sổ dự đoán hình chữ nhật (giống web PC) trong suốt -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/pred_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="@dimen/spacing_md"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/surfaceTranslucent"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_md"
+                android:paddingVertical="@dimen/spacing_sm">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_prediction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/waiting_data"
+                        android:textColor="@color/onSurface"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_md"
+                        android:textColor="@color/onSurfaceVariant"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progress_bar"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressTint="@color/primary"
+                    app:indicatorColor="@color/primary"
+                    app:trackColor="@color/surfaceContainerHighest"
+                    app:trackThickness="6dp" />
+
+                <TextView
+                    android:id="@+id/tv_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:maxLines="2"
+                    android:textColor="@color/onSurfaceVariant"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
+
+</FrameLayout>

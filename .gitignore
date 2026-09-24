@@ -1,0 +1,34 @@
+## Gradle
+.gradle/
+build/
+**/build/
+
+## Local config
+local.properties
+
+## IDE
+.idea/
+*.iml
+.DS_Store
+captures/
+.externalNativeBuild
+.cxx
+
+## Signing (tuyệt đối không commit keystore lên public repo)
+*.jks
+*.keystore
+*.jks.bak
+/app/release-keystore.jks
+
+## Generated
+*.apk
+*.aab
+*.ap_
+
+## Python (Chaquopy)
+**/__pycache__/
+*.pyc
+*.pyo
+
+## Logs
+*.log

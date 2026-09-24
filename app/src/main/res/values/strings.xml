@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToolTX</string>
+
+    <!-- Auth -->
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="username_hint">Tên đăng nhập</string>
+    <string name="password_hint">Mật khẩu</string>
+    <string name="confirm_password_hint">Nhập lại mật khẩu</string>
+    <string name="no_account">Chưa có tài khoản? Đăng ký</string>
+    <string name="have_account">Đã có tài khoản? Đăng nhập</string>
+    <string name="made_by">Made By LMT</string>
+
+    <!-- Home -->
+    <string name="credit">Tín dụng</string>
+    <string name="server_on">Máy chủ đang hoạt động</string>
+    <string name="server_off">Máy chủ đang tắt</string>
+    <string name="server_waiting_data">Đã kết nối — chờ dữ liệu phiên (bấm MỞ GAME để chơi)</string>
+    <string name="mute_sound">Bật / tắt âm thanh</string>
+    <string name="muted_on">Máy chủ đang chạy — âm thanh đã tắt</string>
+    <string name="muted_off">Máy chủ đang chạy — âm thanh bật</string>
+    <string name="server_agent">Máy chủ — agent đang chạy</string>
+    <string name="tool_desc">Công cụ phân tích xác suất dữ liệu chuyên sâu, được thiết kế riêng cho mục đích này.</string>
+
+    <!-- Top Up -->
+    <string name="top_up">Nạp tiền</string>
+    <string name="bank_transfer">Chuyển khoản ngân hàng</string>
+    <string name="bank_transfer_desc">Chọn ngân hàng bên trên, nhận số tài khoản và chuyển khoản đúng nội dung. Tín dụng được cộng sau khi máy chủ xác nhận.</string>
+    <string name="open_topup_web">Mở trang nạp tiền</string>
+    <string name="transfer_title">CHUYỂN KHOẢN</string>
+    <string name="transfer_desc">Chuyển khoản tới tài khoản máy chủ, nội dung ghi rõ số điện thoại hoặc tài khoản của bạn để máy chủ xác nhận.\n\nMở trang nạp tiền để xem số tài khoản và bảng giá.</string>
+
+    <!-- Tool -->
+    <string name="tool">Công cụ</string>
+    <string name="data_table">Bảng phân tích dữ liệu</string>
+    <string name="open_tool">Mở công cụ</string>
+    <string name="waiting_data">chờ dữ liệu…</string>
+    <string name="no_agent">Chưa có agent nào chạy.</string>
+    <string name="confidence">Độ tin cậy %02.0f%%</string>
+    <string name="tai">TÀI</string>
+    <string name="xiu">XỈU</string>
+    <string name="prediction">Dự đoán</string>
+    <string name="open_game">MỞ GAME</string>
+    <string name="close_game">Đóng game</string>
+    <string name="mute_sound">Tắt âm thanh game</string>
+    <string name="unmute_sound">Bật âm thanh game</string>
+    <string name="reset_code">Reset mã</string>
+    <string name="tool_hint">Bấm MỞ GAME sau khi kết nối. Khi game đang mở, chỉ hiện cửa sổ dự đoán kéo thả như trên web PC.</string>
+
+    <!-- Settings -->
+    <string name="settings">Cài đặt</string>
+    <string name="dark_mode">Sáng / Tối</string>
+    <string name="activity_log">Nhật ký hoạt động</string>
+    <string name="auto_connect">Tự kết nối máy chủ</string>
+    <string name="no_activity">Chưa có hoạt động.</string>
+    <string name="predictions_left">Số lượt sử dụng tool còn lại</string>
+    <string name="send_crash_log">Gửi crash log</string>
+    <string name="version">ToolTX — Gold edition — v2.0</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="logout_confirm">Bạn có muốn đăng xuất không?</string>
+
+    <!-- Admin -->
+    <string name="admin">Quản trị</string>
+    <string name="admin_desc">Chào admin — quản lý tài khoản, lượt sử dụng tool và giá mỗi lượt.</string>
+    <string name="total_users">Tổng người dùng (không admin)</string>
+    <string name="total_picks">Tổng lượt sử dụng tool đã cấp</string>
+    <string name="price_per_pick">Giá / lượt sử dụng tool (VNĐ)</string>
+    <string name="add_user">THÊM USER MỚI</string>
+    <string name="user_list">DANH SÁCH USER</string>
+    <string name="create_account">TẠO TÀI KHOẢN</string>
+    <string name="search_hint">Tìm theo username…</string>
+    <string name="balance">Lượt</string>
+    <string name="role">Quyền</string>
+    <string name="delete">Xóa</string>
+    <string name="save">Lưu</string>
+
+    <!-- Browser -->
+    <string name="browser">Trình duyệt tự động</string>
+    <string name="start_browser">KHỞI ĐỘNG TRÌNH DUYỆT</string>
+    <string name="quick_guide">HƯỚNG DẪN NHANH</string>
+    <string name="current_agent">AGENT HIỆN TẠI</string>
+
+    <!-- Nav -->
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_topup">Nạp tiền</string>
+    <string name="nav_tool">Công cụ</string>
+    <string name="nav_settings">Cài đặt</string>
+    <string name="nav_admin">Quản trị</string>
+    <string name="nav_browser">Trình duyệt</string>
+</resources>

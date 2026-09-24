@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface"
+    android:fillViewport="true"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/spacing_lg"
+        android:paddingTop="48dp"
+        android:paddingBottom="128dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_marginBottom="@dimen/spacing_sm"
+            android:background="@drawable/bg_logo_white"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_tx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/made_by"
+            android:textColor="@color/onSurfaceVariant"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xl"
+            app:cardBackgroundColor="@color/surfaceContainerHigh"
+            app:cardCornerRadius="@dimen/card_radius_large"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_lg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/onSurface"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_lg"
+                    app:boxBackgroundColor="@color/surfaceContainerHighest"
+                    app:boxCornerRadiusBottomEnd="@dimen/spacing_lg"
+                    app:boxCornerRadiusBottomStart="@dimen/spacing_lg"
+                    app:boxCornerRadiusTopEnd="@dimen/spacing_lg"
+                    app:boxCornerRadiusTopStart="@dimen/spacing_lg"
+                    app:hintTextColor="@color/onSurfaceVariant"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/onSurfaceVariant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="56dp"
+                        android:hint="@string/username_hint"
+                        android:inputType="text"
+                        android:textColor="@color/onSurface"
+                        android:textColorHint="@color/onSurfaceVariant" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    app:boxBackgroundColor="@color/surfaceContainerHighest"
+                    app:boxCornerRadiusBottomEnd="@dimen/spacing_lg"
+                    app:boxCornerRadiusBottomStart="@dimen/spacing_lg"
+                    app:boxCornerRadiusTopEnd="@dimen/spacing_lg"
+                    app:boxCornerRadiusTopStart="@dimen/spacing_lg"
+                    app:endIconMode="password_toggle"
+                    app:hintTextColor="@color/onSurfaceVariant"
+                    app:startIconDrawable="@drawable/ic_lock"
+                    app:startIconTint="@color/onSurfaceVariant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="56dp"
+                        android:hint="@string/password_hint"
+                        android:inputType="textPassword"
+                        android:textColor="@color/onSurface"
+                        android:textColorHint="@color/onSurfaceVariant" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    app:boxBackgroundColor="@color/surfaceContainerHighest"
+                    app:boxCornerRadiusBottomEnd="@dimen/spacing_lg"
+                    app:boxCornerRadiusBottomStart="@dimen/spacing_lg"
+                    app:boxCornerRadiusTopEnd="@dimen/spacing_lg"
+                    app:boxCornerRadiusTopStart="@dimen/spacing_lg"
+                    app:endIconMode="password_toggle"
+                    app:hintTextColor="@color/onSurfaceVariant"
+                    app:startIconDrawable="@drawable/ic_lock"
+                    app:startIconTint="@color/onSurfaceVariant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="56dp"
+                        android:hint="@string/confirm_password_hint"
+                        android:inputType="textPassword"
+                        android:textColor="@color/onSurface"
+                        android:textColorHint="@color/onSurfaceVariant" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/spacing_sm"
+                    android:textColor="@color/onSurfaceVariant"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/onPrimary"
+                    android:textSize="16sp"
+                    app:backgroundTint="@color/primary"
+                    app:cornerRadius="@dimen/btn_height" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_switch"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:text="@string/have_account"
+                    android:textColor="@color/primary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+</ScrollView>

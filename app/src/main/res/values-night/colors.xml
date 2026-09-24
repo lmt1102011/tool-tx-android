@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 Dark Palette -->
+    <color name="primary">#FF62A8F7</color>
+    <color name="onPrimary">#FF042E46</color>
+    <color name="primaryContainer">#FF0C496E</color>
+    <color name="onPrimaryContainer">#FFC3E9FF</color>
+
+    <color name="secondary">#FFB0C8D5</color>
+    <color name="secondaryContainer">#FF314A58</color>
+    <color name="onSecondaryContainer">#FFCBEAFF</color>
+
+    <color name="tertiary">#FF49475D</color>
+    <color name="tertiaryContainer">#FF49475D</color>
+    <color name="onTertiaryContainer">#FFE8E5FF</color>
+
+    <color name="surface">#FF0F1417</color>
+    <color name="surfaceContainerLow">#FF171C1F</color>
+    <color name="surfaceContainer">#FF1B2023</color>
+    <color name="surfaceContainerHigh">#FF252A2E</color>
+    <color name="surfaceContainerHighest">#FF303437</color>
+    <color name="onSurface">#FFDDE3E7</color>
+    <color name="onSurfaceVariant">#FFBBC6CC</color>
+
+    <color name="outline">#FF839299</color>
+    <color name="outlineVariant">#FF3B474D</color>
+
+    <color name="error">#FFF26B6B</color>
+    <color name="onError">#FF601410</color>
+    <color name="errorContainer">#FF8C1D15</color>
+    <color name="onErrorContainer">#FFF9D9D7</color>
+
+    <color name="inverseSurface">#FFDDE3E7</color>
+    <color name="inverseOnSurface">#FF2B3134</color>
+    <color name="inversePrimary">#FF0C496E</color>
+
+    <color name="background">#FF0F1417</color>
+    <color name="onBackground">#FFDDE3E7</color>
+
+    <!-- Accent -->
+    <color name="gold">#FFD4CA57</color>
+    <color name="goldDim">#2ED4CA57</color>
+    <color name="green">#FF59D98C</color>
+    <color name="greenContainer">#FF2C5A38</color>
+    <color name="red">#FFF26B6B</color>
+    <color name="blue">#FF6BADF8</color>
+    <color name="orange">#FFF79E3D</color>
+
+    <!-- Nav -->
+    <color name="navBackground">#FF1B2023</color>
+    <color name="pillBackground">#FF314A58</color>
+    <color name="pillText">#FFCBEAFF</color>
+
+    <!-- Skeleton -->
+    <color name="skeletonBase">#FF252B2F</color>
+    <color name="skeletonHi">#FF3A444C</color>
+</resources>

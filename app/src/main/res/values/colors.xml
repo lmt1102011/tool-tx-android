@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 Light Palette -->
+    <color name="primary">#FF3E7FC0</color>
+    <color name="onPrimary">#FFFFFFFF</color>
+    <color name="primaryContainer">#FFD3E4FF</color>
+    <color name="onPrimaryContainer">#FF0B2C4F</color>
+
+    <color name="secondary">#FF54657A</color>
+    <color name="secondaryContainer">#FFD7E3F8</color>
+    <color name="onSecondaryContainer">#FF27364A</color>
+
+    <color name="tertiary">#FF785A74</color>
+    <color name="tertiaryContainer">#FFFFD9F7</color>
+    <color name="onTertiaryContainer">#FF40304B</color>
+
+    <color name="surface">#FFFAF9FB</color>
+    <color name="surfaceTranslucent">#E6FAF9FB</color>
+    <color name="surfaceContainerLow">#FFF2F2F5</color>
+    <color name="surfaceContainer">#FFECECEF</color>
+    <color name="surfaceContainerHigh">#FFE7E7EA</color>
+    <color name="surfaceContainerHighest">#FFE1E2E6</color>
+    <color name="onSurface">#FF1A1C1F</color>
+    <color name="onSurfaceVariant">#FF43474D</color>
+
+    <color name="outline">#FF74777F</color>
+    <color name="outlineVariant">#FFC4C7CF</color>
+
+    <color name="error">#FFB3261E</color>
+    <color name="onError">#FFFFFFFF</color>
+    <color name="errorContainer">#FFFFDAD6</color>
+    <color name="onErrorContainer">#FF410002</color>
+
+    <color name="inverseSurface">#FF2F3032</color>
+    <color name="inverseOnSurface">#FFF0F0F3</color>
+    <color name="inversePrimary">#FFA3C9F0</color>
+
+    <color name="background">#FFFAF9FB</color>
+    <color name="onBackground">#FF1A1C1F</color>
+
+    <!-- Accent -->
+    <color name="gold">#FFB98A00</color>
+    <color name="goldDim">#0FB98A00</color>
+    <color name="green">#FF2E7D32</color>
+    <color name="greenContainer">#FFC8E6C9</color>
+    <color name="panelGo">#FF22C55E</color>
+    <color name="red">#FFC62828</color>
+    <color name="blue">#FF3E7FC0</color>
+    <color name="orange">#FFE65100</color>
+
+    <!-- Nav -->
+    <color name="navBackground">#FFECECEF</color>
+    <color name="pillBackground">#FFE3ECF7</color>
+    <color name="pillText">#FF27364A</color>
+
+    <!-- Skeleton -->
+    <color name="skeletonBase">#EBEDF0</color>
+    <color name="skeletonHi">#F7F9FC</color>
+</resources>

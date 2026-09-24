@@ -1,0 +1,3 @@
+-keep class com.chaquo.python.** { *; }
+-keep class com.lmt.tooltx.bridge.** { *; }
+-dontwarn com.chaquo.python.**
